@@ -11,6 +11,8 @@ public class PrimeFactor {
         List<Integer> factors = new ArrayList<>();
         if (i == 2) {
             factors.add(2);
+        } else if (i == 3) {
+            factors.add(3);
         }
         return factors;
     }

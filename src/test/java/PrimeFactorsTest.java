@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -28,5 +27,10 @@ public class PrimeFactorsTest {
     @Test
     public void testPrimeFactorOf2(){
         assertEquals(Arrays.asList(2), primeFactor.of(2));
+    }
+
+    @Test
+    public void testPrimeFactorOf3(){
+        assertEquals(Arrays.asList(3), primeFactor.of(3));
     }
 }
