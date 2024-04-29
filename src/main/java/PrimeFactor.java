@@ -7,12 +7,14 @@ public class PrimeFactor {
 
     }
 
-    public List<Integer> of(int i) {
+    public List<Integer> of(int number) {
         List<Integer> factors = new ArrayList<>();
-        if (i == 2) {
-            factors.add(2);
-        } else if (i == 3) {
-            factors.add(3);
+
+        for (int divieder = 2; number > 1; divieder++) {
+            while (number % divieder == 0) {
+                factors.add(divieder);
+                number = number / divieder;
+            }
         }
         return factors;
     }
